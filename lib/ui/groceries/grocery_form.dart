@@ -49,11 +49,7 @@ class _NewItemState extends State<NewItem> {
 
   void onAdd() {
     // Will be implemented later - Create and return the new grocery
-    _nameController.text;
-    _quantityController.text;
-    _selectedCategory;
-
-    final newGrocery = Grocery(
+    final Grocery newGrocery = Grocery(
       id: 'd',
       name: _nameController.text,
       quantity: int.parse(_quantityController.text),

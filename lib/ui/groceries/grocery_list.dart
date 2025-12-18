@@ -11,6 +11,7 @@ class GroceryList extends StatefulWidget {
 }
 
 class _GroceryListState extends State<GroceryList> {
+  
   void onCreate() {
     // TODO-4 - Navigate to the form screen using the Navigator push
     Navigator.push(
@@ -29,7 +30,7 @@ class _GroceryListState extends State<GroceryList> {
     if (groceryItems.isNotEmpty) {
       // TODO-1 - Display groceries with an Item builder and  LIst Tile
       content = ListView.builder(
-        itemCount: groceryItems.length,
+        itemCount: groceryItems.length,  // tells the builder how many items to build
         itemBuilder: (context, index) => GroceryItem(grocery: groceryItems[index],),
       );
     }
